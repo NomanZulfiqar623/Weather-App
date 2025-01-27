@@ -21,11 +21,11 @@ export default function FutureWeatherReport(props = "") {
 
   return (
     <section className={`${props.class} sm:mx-auto`}>
-      <h1 className="ml-2 2xl:text-3xl">{props.blocks}-Day Forecast</h1>
-      <section className={`grid grid-cols-1 ${"grid-rows-" + props.block}`}>
-        {futureComponents}
-      </section>
-    </section>
+            <h1 className='ml-2 2xl:text-3xl'>{props.blocks}-Day Forecast</h1>
+            <section className={`grid grid-cols-1 ${'grid-rows-' + props.blocks}`}>
+                {futureComponents}
+            </section>
+        </section>
   );
 }
 
@@ -33,7 +33,7 @@ function FutureWeatherReportBlock(props = "") {
   return (
     <section className={`${props.class} flex justify-between items-center`}>
       <h1 className="2xl:text-2xl ml-2 w-2/6">{props.day}</h1>
-      <section className="w-3/6 flex- gap-4 justify-start items-center">
+      <section className="w-3/6 flex gap-4 justify-start items-center">
         <img
           className="h-8 2xl:h-12"
           src={`http://openweathermap.org/img/w/${

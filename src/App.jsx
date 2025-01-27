@@ -110,7 +110,7 @@ export default function App() {
               <>
                 <Navbar active={'Home'} class="lg:basis-1/7 lg:static 2xl:basis-1/7 sm:fixed sm:bottom-0" />
                 <TodayReport sCity={sCity} setSCity={setSCity} setBtnPress={setBtnPress} btnPress={btnPress} loc={currLoc} class="box-border lg:basis-4/7 sm:basis-full" />
-                <NextDayForecast btnPress={btnPress} loc={currLoc} class="lg:basis-2/7 sm:mb-[7rem] lg:mb-0" />
+                <NextDayForecast btnPress={btnPress} loc={currLoc} class="lg:basis-2/7 sm:mb-[7rem] lg:mb-0"></NextDayForecast>
               </>
             } />
             <Route path="/Search/:city" element={
